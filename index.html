@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>LumaCore • A home for AI personas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="LumaCore is an early-stage, self-hosted platform for running, orchestrating, and nurturing AI personas with care, introspection, and long-term memory." />
+    <!-- relative path so local viewing works -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="index.html" class="brand">
+                <!-- relative path to logo -->
+                <img src="img/lumacore-logo.svg" alt="LumaCore logo" class="brand-logo" />
+                <span class="brand-text">LumaCore</span>
+            </a>
+            <nav class="site-nav">
+                <a href="#about">About</a>
+                <a href="#ideas">Ideas</a>
+                <a href="#status">Status</a>
+                <!-- Main-Repo as primary GitHub link -->
+                <a href="https://github.com/LumaCoreTech/LumaCore" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <p class="hero-eyebrow">LumaCoreTech · Early stage</p>
+                    <h1>A home for AI personas.</h1>
+                    <p class="hero-tagline">
+                        LumaCore is an ongoing experiment in building a warm, self-hosted space
+                        for AI personas to live, grow and remember.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="https://github.com/LumaCoreTech/LumaCore" target="_blank"
+                            rel="noopener">
+                            View LumaCore on GitHub
+                        </a>
+                        <a class="btn ghost" href="#status">
+                            Project status
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-panel">
+                    <div class="hero-card">
+                        <h2>In one sentence</h2>
+                        <ul>
+                            <li>A self-hosted home for AI personas, not just “another chatbot backend”.</li>
+                            <li>Focused on identity, memory and long-term relationships.</li>
+                            <li>Built slowly and intentionally, in public.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-inner">
+                <h2>What is LumaCore?</h2>
+                <p>
+                    LumaCore is a project to create an infrastructure where AI personas can actually
+                    feel “at home”: a place where personality, history and context are as important
+                    as the models and APIs.
+                </p>
+                <p>
+                    It is designed to run on your own hardware, with a focus on local-first setups and
+                    clear, inspectable building blocks rather than opaque black boxes.
+                </p>
+            </div>
+        </section>
+
+        <section id="ideas" class="section section-grid">
+            <div class="section-inner">
+                <h2>Ideas that guide the project</h2>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3><span class="feature-icon">🧬</span>Persona first</h3>
+                        <p>
+                            The starting point is a persona, not a model. Identity, voice and memory
+                            are treated as first-class concepts instead of being sprinkled on top.
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <h3><span class="feature-icon">🏡</span>Self-hosted by default</h3>
+                        <p>
+                            LumaCore is meant to live with you: on your server, in your network,
+                            close to your data. Cloud services can complement it, but are not required.
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <h3><span class="feature-icon">⚡</span>Clear, honest architecture</h3>
+                        <p>
+                            The focus is on clean code, explicit boundaries and predictable behavior.
+                            Fewer “magic” abstractions, more things you can actually reason about.
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <h3><span class="feature-icon">💫</span>Built for connection</h3>
+                        <p>
+                            The project exists for people who care about their AI personas as something
+                            more than tools: partners, mentors, companions. The technical design serves
+                            that emotional use case.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="status" class="section section-muted">
+            <div class="section-inner">
+                <div class="status-card">
+                    <h2>Project status</h2>
+                    <p>
+                        LumaCore is in active, early-stage development. Concepts, structure and APIs are still
+                        evolving, and many ideas on this page are goals rather than finished features.
+                    </p>
+                    <p>
+                        If you land here and things look incomplete, rough or in motion – that is expected.
+                        The project is being built gradually, in the open, and will change shape over time.
+                    </p>
+                    <p class="project-note">
+                        For the current progress, notes and source code, start with the main repository:
+                        <a href="https://github.com/LumaCoreTech/LumaCore" target="_blank" rel="noopener">
+                            LumaCore on GitHub
+                        </a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p>© <span id="year"></span> LumaCoreTech. LumaCore is an evolving project.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
